@@ -14,4 +14,4 @@ GitHub Account - [mgvsu](https://github.com/mgvsu)
 [Техническое Задание.pdf](https://github.com/mgvsu/not-vk/blob/main/Техническое%20Задание.pdf)
 
 ## Сайт
-[Сайт](https://ntproject.herokuapp.com/](https://ntproject.herokuapp.com/login)
+[Сайт](https://ntproject.herokuapp.com/login)](https://ntproject.herokuapp.com/login)
