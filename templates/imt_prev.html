@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block main_page%}
+<div class="container">
+  <h1>Здравствуйте, {{ current_user.login }}!</h1>
+  <h1>Результаты прошлых измерений: </h1>
+
+  <table class="article-table" style="border-collapse:collapse; margin:0 auto; max-width:600px;">
+ <tbody>
+ <tr>
+    <td class="td_h" align="center" width="500px"></td><td class="td_h" align="center"></td>
+   </tr>
+   <tr>
+    <td class="td_h" align="center" width="50%">Дата измерения:</td><td class="td_h" align="center">Результат:</td>
+   </tr>
+   {% for element in imt_results %}
+   <tr>
+     <td class="td_c" align="center">{{element.date.date()}}</td><td class="td_c">{{element.result}}</td>
+   </tr>
+   {% endfor %}
+ </tbody>
+</table>
+</div>
+{%endblock%}

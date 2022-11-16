@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/style.css')}}">
+    <title>SportCalc</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js'></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="/"><img class = 'graphiclogo'src='static/img/logo.png' alt ='Logo'></a>
+      {% if current_user.is_authenticated %}
+      <div class="login_state">
+        <p>Вы вошли как {{ current_user.login }}! </p>
+        <a href="{{url_for('logout_page')}}">(Выйти)</a>
+      </div>
+      {% else %}
+      <div class="login_state">
+        <p>Вы еще не вошли в систему! </p>
+        <a href="{{url_for('login_page')}}">(Войти)</a>
+      </div>
+      {% endif %}
+  </div>
+  <nav>
+    <div class="topnav">
+      <a href="imt_calc">Калькулятор ИМТ</a>
+      <a href="weight_control">Контроль веса</a>
+      <a href="kcal_calc">Калькулятор калорийности</a>
+      <a href="norm_kcal">Калькулятор дневной нормы калорий</a>
+      <a href="ideal_weight">Калькулятор идального веса</a>
+    </div>
+  </nav>
+</header>
+{%block main_page%}
+
+{%endblock%}
+</div>
+
+</body>
+</html>
