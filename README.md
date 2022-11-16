@@ -1,12 +1,9 @@
 # not-vk
 Проект-аналог VK
-## Подготовили
-Маргулис Евгений 
-GitHub Account - [mgvsu](https://github.com/mgvsu)
 
 ## Команда проекта
 
-| ## GitHub Account | ## Имя |
+| GitHub Account | Имя |
 | ------ | ------ |
 | [mgvsu](https://github.com/mgvsu) | Маргулис Евгений |
 | ****** | Анастасия Чеботарева |
