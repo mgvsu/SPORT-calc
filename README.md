@@ -20,7 +20,7 @@
 ## Код
 [ .idea ]( https://github.com/mgvsu/SPORT-calc/tree/main/.idea )
 
-[ pycache ]( https://github.com/mgvsu/SPORT-calc/tree/main/__pycache__ )
+[pycache]( https://github.com/mgvsu/SPORT-calc/tree/main/__pycache__ )
 
 [ static ]( https://github.com/mgvsu/SPORT-calc/tree/main/static )
 
