@@ -18,3 +18,11 @@
 
 
 ## Код
+[ .idea ]( https://github.com/mgvsu/SPORT-calc/tree/main/.idea )
+[ __pycache__ ]( https://github.com/mgvsu/SPORT-calc/tree/main/__pycache__ )
+[ static ]( https://github.com/mgvsu/SPORT-calc/tree/main/static )
+[ templates ]( https://github.com/mgvsu/SPORT-calc/tree/main/templates )
+[ venv ]( https://github.com/mgvsu/SPORT-calc/tree/main/venv )
+[ .DS_Store ]( https://github.com/mgvsu/SPORT-calc/blob/main/.DS_Store )
+[ database.db ]( https://github.com/mgvsu/SPORT-calc/tree/main/database.db )
+[ main.py ]( https://github.com/mgvsu/SPORT-calc#:~:text=6%20minutes%20ago-,main.py,-SPORT%20calc )
