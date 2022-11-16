@@ -1,4 +1,4 @@
-# not-vk
+# Calorie Calculator
 Проект-аналог VK
 
 ## Команда проекта
