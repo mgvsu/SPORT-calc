@@ -5,8 +5,8 @@
 
 | GitHub Account | Имя |
 | ------ | ------ |
-| [mgvsu](https://github.com/mgvsu) | Маргулис Евгений |
 | [achebotareva](https://github.com/achebotareva) | Анастасия Чеботарева |
+| [mgvsu](https://github.com/mgvsu) | Маргулис Евгений |
 
 ## Документация
 [Курсовая работа.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Курсовая%20работа.docx)
