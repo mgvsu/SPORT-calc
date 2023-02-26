@@ -15,7 +15,8 @@
 
 [Техническое Задание.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Техническое%20задание.docx)
 
-
+## Видео
+[Демо видео проекта (youtube)](https://youtu.be/dayGtzs4IQ0)
 
 ## Код
 [ .idea ]( https://github.com/mgvsu/SPORT-calc/tree/main/.idea )
