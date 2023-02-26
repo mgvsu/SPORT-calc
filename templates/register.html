@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{%block main_page%}
+<div class="container">
+  <h1>Регистрация</h1>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+  <form class="imt_calc" method="post">
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Логин</label>
+      <input type="imt_calc_input" name = 'login' id = "login">
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Пароль</label>
+      <input type="password" name = 'password' id = "password">
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Повторный пароль</label>
+      <input type="password" name = 'password2' id = "password2">
+    </div>
+    <button class = "imt_calc_form_button" type = "submit" name="button">Зарегистрироваться</button>
+    <a href="{{url_for('login_page')}}">Войти</a>
+  </form>
+</div>
+{%endblock%}

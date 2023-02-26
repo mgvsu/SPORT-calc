@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block main_page %}
+<div class="container">
+  <h1>Калькулятор ИМТ (индекса массы тела) </h1>
+  <h3><br>С помощью данного онлайн-калькулятора вы можете рассчитать ваш индекс массы тела,
+    ИМТ (от англ. Body mass index - BMI). <br><br>Вы можете проверить соответствие между массой вашего тела и вашим ростом
+    и узнать, имеется ли у вас избыточный вес, или же, наоборот, не страдаете ли вы недостатком веса. Чтобы рассчитать индекс
+    массы вашего тела (ИМТ) заполните в калькуляторе поля, соответствующие значениям вашего роста и веса. Вводите значения
+     роста и вашего веса с точностью до десятых, тогда результат вычисления будет наиболее точным.</h3>
+  <form class="imt_calc" method = 'post'>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Ваш рост, м</label>
+      <input type="imt_calc_input" name = 'height' id = "height">
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Ваш вес, кг</label>
+      <input type="imt_calc_input" name = 'weight' id = "weight">
+    </div>
+    <div class="imt_class_group">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li style = 'color: red; font-weight: bold;'>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    </div>
+    <button class = "imt_calc_form_button" type = "submit" name="button">Рассчитать</button>
+  </form>
+  <a style = 'font-weight: bold;' align = 'center' href="{{ url_for('prev') }}">Посмотреть результаты прошлых измерений(для зарегестрированных пользователей)<br></a>
+  <h3>Индекс массы тела ИМТ (англ. BMI) был предложен бельгийским ученым А.Кетле и может быть вычислен по следующей формуле:
+  <br><br>ИМТ(BMI) = m / h^2,<br><br> где m - масса тела в килограммах, h - рост в метрах</h3>
+  <h2><br>Таблица сводных значений:<br><br></h2>
+  <table class="article-table" style="border-collapse:collapse; margin:0 auto; max-width:600px;">
+ <tbody>
+ <tr>
+    <td class="td_h" align="center" width="50%"></td><td class="td_h" align="center"></td>
+   </tr>
+   <tr>
+    <td class="td_h" align="center" width="50%">Индекс массы тела ИМТ:</td><td class="td_h" align="center">Классификация:</td>
+   </tr>
+   <tr>
+     <td class="td_c" align="center">Меньше 16</td><td class="td_c">Выраженный дефицит массы тела</td>
+   </tr>
+   <tr>
+    <td class="td_c" align="center">16&nbsp;–&nbsp;18,5 </td><td class="td_c"> Недостаточная масса тела</td>
+   </tr>
+   <tr>
+     <td class="td_c" align="center">18,5&nbsp;–&nbsp;25</td><td class="td_c"> Нормальная масса тела</td>
+   </tr>
+
+   <tr>
+      <td class="td_c" align="center">25&nbsp;–&nbsp;30</td><td class="td_c">Избыточная масса тела (предожирение)</td>
+   </tr>
+   <tr>
+      <td class="td_c" align="center">30&nbsp;–&nbsp;35</td><td class="td_c">Ожирение 1-ой степени</td>
+   </tr>
+   <tr>
+      <td class="td_c" align="center">35&nbsp;–&nbsp;40</td><td class="td_c">Ожирение 2-ой степени</td>
+   </tr>
+   <tr>
+      <td class="td_f" align="center">Больше 40</td><td class="td_f">Ожирение 3-ой степени</td>
+   </tr>
+ </tbody>
+</table>
+</div>
+
+{% endblock %}

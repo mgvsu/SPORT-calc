@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{%block main_page%}
+<div class="container">
+  <h1>Калькулятор нормы калорий</h1>
+
+  <form class="imt_calc_kcal" method="post">
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Пол</label>
+      <p><input  name="sex" type="radio" value="m" checked> Мужской</p>
+      <p><input  name="sex" type="radio" value="f"> Женский</p>
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Возраст</label>
+      <input type="imt_calc_input" name = 'age' id = "age" style = 'width: 50px;'>
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Рост</label>
+      <input type="imt_calc_input" name = 'height' id = "height" style = 'width: 160px;'>
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Вес</label>
+      <input type="imt_calc_input" name = 'weight' id = "weight">
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label"><u>Уровень активности</u></label>
+      <p style = 'font-weight: bold;'><input  name="activity" type="radio" value="1.2" checked> Минимальный уровень физнагрузки или полное ее отсутствие (сидячая работа, отсутствие спорта)</p>
+      <p style = 'font-weight: bold;''><input  name="activity" type="radio" value="1.3"> Легкий уровень активности (легкие физические упражнения около 3 раз за неделю, ежедневная утренняя зарядка, пешие прогулки)</p>
+      <p style = 'font-weight: bold;''><input  name="activity" type="radio" value="1.5"> Средняя активность (спорт до 5 раз за неделю);й</p>
+      <p style = 'font-weight: bold;''><input  name="activity" type="radio" value="1.7"> Активность высокого уровня (активный образ жизни вкупе с ежедневными интенсивными тренировками)</p>
+      <p style = 'font-weight: bold;''><input  name="activity" type="radio" value='1.9'> Экстремально высокая активность (спортивный образ жизни, тяжелый физический труд, длительные тяжелые тренировки каждый день).</p>
+    </div>
+    <div class="imt_class_group">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li style = 'color: red; font-weight: bold;'>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    </div>
+    <button class = "imt_calc_form_button" type = "submit" name="button">Рассчитать</button>
+  </form>
+</div>
+{%endblock%}

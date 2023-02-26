@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+
+{%block main_page%}
+<div class="container">
+<h1>Ваши изменения в весе<br></h1>
+{%if weight_now%}
+<h2><br>Ваш вес сейчас: {{weight_now}}</h2>
+{%else%}
+<h2><br>Вы еще не добавляли свой вес</h2>
+{%endif%}
+<button class = 'weight_control_button' onclick="document.location='new_weight'" name="button">Добавить вес</button>
+{%if weight_now%}
+<h1>Динамика изменения веса в графике:</h1>
+<canvas class='chart' id="myChart" width="600" height="200"></canvas>
+<script type = 'text/javascript'>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: {{labels | safe}},
+        datasets: [{
+            label: "Вес, кг",
+            borderColor: "#E85A4F",
+            data: {{values | safe}},
+            lineTension: 0.1
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      responsive: false
+    }
+    });
+</script>
+<h1>Динамика изменения веса в таблице: </h1>
+<table class="article-table" style="border-collapse:collapse; margin:30px auto; max-width:600px;">
+ <tbody>
+ <tr>
+    <td class="td_h" align="center" width="500px"></td><td class="td_h" align="center"></td>
+   </tr>
+   <tr>
+    <td class="td_h" align="center" width="50%">Дата измерения:</td><td class="td_h" align="center">Результат:</td>
+   </tr>
+   {% for element in weight_all %}
+   <tr>
+     <td class="td_c" align="center">{{element.date.date()}}</td><td class="td_c">{{element.weight}}</td>
+   </tr>
+   {% endfor %}
+ </tbody>
+</table>
+{%endif%}
+</div>
+{%endblock%}

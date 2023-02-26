@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+
+{%block main_page%}
+<div class="container">
+<h1>Расчет идеального веса по формуле Брунхарда<br></h1>
+<h3><br>Еще одна формула вычисления идеального веса была обнаружена на просторах Интернета — формула Брунхарда.
+  Требует знания нетривиального параметра — окружности грудной клетки. Согласно формуле, идеальный вес — это рост в сантиметрах умноженный на окружность грудной клетки в сантиметрах и деленный на 240. Калькулятор ниже:</h3>
+  <form class="imt_calc" method = 'post'>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Ваш рост, м<br></label>
+      <input type="imt_calc_input" name = 'height' id = "height">
+    </div>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Окружность грудной клетки, см</label>
+      <input type="imt_calc_input" name = 'gr_kl' id = "gr_kl">
+    </div>
+    <div class="imt_class_group">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li style = 'color: red; font-weight: bold;'>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    </div>
+    <button class = "imt_calc_form_button" type = "submit" name="button">Рассчитать</button>
+  </form>
+</div>
+{%endblock%}

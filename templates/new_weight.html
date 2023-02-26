@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block main_page %}
+<div class="container">
+  <h1>Добавление веса </h1>
+  <form class="imt_calc" method = 'post'>
+    <div class="imt_calc_group">
+      <label class = "imt_calc_form_label">Ваш вес, кг</label>
+      <input type="imt_calc_input" name = 'weight' id = "weight">
+    </div>
+    <div class="imt_class_group">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li style = 'color: red; font-weight: bold;'>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    </div>
+    <button class = "imt_calc_form_button" type = "submit" name="button">Добавить</button>
+  </form>
+</div>
+
+{% endblock %}
