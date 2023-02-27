@@ -30,8 +30,6 @@
 
 [ templates ]( https://github.com/mgvsu/SPORT-calc/tree/main/templates )
 
-[ venv ]( https://github.com/mgvsu/SPORT-calc/tree/main/venv )
-
 [ .DS_Store ]( https://github.com/mgvsu/SPORT-calc/blob/main/.DS_Store )
 
 [ database.db ]( https://github.com/mgvsu/SPORT-calc/tree/main/database.db )
