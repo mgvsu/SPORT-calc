@@ -16,7 +16,7 @@ UPD: В связи с политической обстановкой в стр�
 ## Документация
 [Курсовая работа.docx](https://github.com/mgvsu/SPORT-calc/blob/main/TP_Kursovaya.docx)
 
-[Курсовая работа.pdf](https://github.com/mgvsu/SPORT-calc/blob/main/TP_Kursovaya.pdf)
+[Курсовая работа.pdf](https://github.com/mgvsu/SPORT-calc/blob/main/TP_Kursovaya_1.pdf)
 
 [Техническое Задание.docx](https://github.com/mgvsu/SPORT-calc/blob/main/TZ.docx)
 
