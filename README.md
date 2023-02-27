@@ -23,7 +23,7 @@
 
 ## Приложение
 [Метрики](https://metrika.yandex.ru/dashboard?group=week&period=year&id=92603238)
-
+[Сайт](https://ntproject.herokuapp.com/)
 ## Код
 [ .idea ]( https://github.com/mgvsu/SPORT-calc/tree/main/.idea )
 
