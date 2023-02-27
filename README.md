@@ -15,6 +15,9 @@
 
 [Техническое Задание.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Техническое%20задание.docx)
 
+## Курсовая работа
+[Презентация.pdf]()
+
 ## Видео
 [Демо видео проекта (youtube)](https://youtu.be/dayGtzs4IQ0)
 
