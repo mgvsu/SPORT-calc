@@ -11,7 +11,7 @@ UPD: В связи с политической обстановкой в стр�
 ## Сервисы для работы
 [miro](https://miro.com/app/board/o9J_lOrUdlg=/)
 
-[trello](https://trello.com/atlassian-stands-with-ukraine)
+[trello](https://trello.com/b/pLWbmTCl/sportcalc)
 
 ## Документация
 [Курсовая работа.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Курсовая%20работа.docx)
