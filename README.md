@@ -10,6 +10,7 @@ UPD: В связи с политической обстановкой в стр�
 
 ## Сервисы для работы
 [miro](https://miro.com/app/board/o9J_lOrUdlg=/)
+
 [trello](https://trello.com/atlassian-stands-with-ukraine)
 
 ## Документация
