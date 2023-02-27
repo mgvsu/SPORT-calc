@@ -8,6 +8,10 @@ UPD: В связи с политической обстановкой в стр�
 | [achebotareva](https://github.com/achebotareva) | Анастасия Чеботарева |
 | [mgvsu](https://github.com/mgvsu) | Маргулис Евгений |
 
+## Сервисы для работы
+[miro](https://miro.com/app/board/o9J_lOrUdlg=/)
+[trello](https://trello.com/atlassian-stands-with-ukraine)
+
 ## Документация
 [Курсовая работа.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Курсовая%20работа.docx)
 
