@@ -14,11 +14,11 @@ UPD: В связи с политической обстановкой в стр�
 [trello](https://trello.com/b/pLWbmTCl/sportcalc)
 
 ## Документация
-[Курсовая работа.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Курсовая%20работа.docx)
+[Курсовая работа.docx](https://github.com/mgvsu/SPORT-calc/blob/main/TP_Kursovaya.docx)
 
 
 
-[Техническое Задание.docx](https://github.com/mgvsu/Calorie-Calculator/blob/main/Техническое%20задание.docx)
+[Техническое Задание.docx](https://github.com/mgvsu/SPORT-calc/blob/main/TZ.docx)
 
 ## Курсовая работа
 [Презентация.pdf](https://github.com/mgvsu/SPORT-calc/blob/main/NTP_1.pdf)
